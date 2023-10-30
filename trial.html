@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banquet & conferencing/Kitchens</title>
+    <link rel="stylesheet" href="trial.css">
+    <script src="https://kit.fontawesome.com/86e5cb6ee7.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- -------------Header Section ------------------- -->
+  <div class="header">
+    <nav>
+      <img src="images/Correct logo.png" class="logo">
+      <ul id="sidemenu">
+          <li><a href="index.html" id="About-font1">Home</a></li>
+          <li><a href="events.html" id="About-font1">Events</a></li>
+          <li><a href="kitchens.html" id="About-font1">Kitchens</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+  </nav> 
+  </div>
+  
+    <!-- ------------------Footer Section ----------------------- -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Cascade Company Limited</h4>
+                    <ul>
+                        <li><a href="#">Cascade Events</a></li>
+                        <li><a href="kitchens.html">Cascade Kitchens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">0792000888 - premier</a></li>
+                        <li><a href="#">0792000888 - main</a></li>
+                        <li><a href="#">0704044181 - annex</a></li>
+                        <li><a href="#">0797111444 - tatu city</a></li>
+                        <h4>Emails</h4>
+                        <li><a href="#">corporate@Cascade.ac.ke</a></li>
+                        <li><a href="#">corporate@CascadeKenya@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="#">Cascade premier</a></li>
+                        <li><a href="#">Cascade Main</a></li>
+                        <li><a href="#">Cascade annex</a></li>
+                        <li><a href="#">Cascade Tatu city</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for the Nav bar in Smartphones -->
+    <script src="trial.js"></script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-350px";
+        }
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        
+    
+        }
+    </script>
+</body>
+</html>

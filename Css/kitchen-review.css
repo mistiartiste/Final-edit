@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.col a {
+  text-decoration: none;
+  color: rgb(102, 90, 182);
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #205e43; /* Set your desired background color */
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 24px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+/* -----------Nav css for the popup sidemenu------- */
+    nav .fas{
+    display: flex;
+    font-size: 35px;
+    color: #fff;
+}
+    nav .fas:hover{
+        color: #ff004f;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    nav ul {
+        background: rgba(32, 94, 67, 0.9); /* Here, the fourth value (0.8) represents the opacity (0 = fully transparent, 1 = fully opaque) */
+        position: fixed;
+        top: 0;
+        right: -500px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+  /* ----- CSS FOR THE BACK BUTTON --------- */
+  .menu-back-btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    background-color: #205e43;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    font-weight: bold;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .menu-back-btn:hover{
+    border: 1px solid #205e43;
+    background: #d8d5d5;
+    color: #000;
+  
+  }
+  
+/* ------------Footer Section ----------------------------- */
+.foot{
+  background-color: #e8e3d1;
+  padding-top: 30px;
+}
+
+.footer {
+  max-width: 1216px;
+  margin: 0 auto;
+  position: relative;
+  font-weight: 800;
+
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#copyright{
+  padding-bottom: 30px;
+}
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-unstyled a {
+  margin-bottom: 7px;
+  font-size: 21px;
+}
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+  
+}
+
+.text-fine{
+  font-size: 20px;
+  color: darkslateblue;
+}
+
+.d-flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/** Social media Icons **/
+.socials{
+  text-align: center;
+  background-color: #d8b542;
+}
+
+.fa {
+  font-size: 3em; /* Set the icon size */
+  padding: 7px; /* Add some space around the icon */
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 3%;
+  margin-right: 3%; /* Add some space between the icons */
+  text-decoration: none; /* Remove the underline from the links */
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7; /* Make the icon slightly transparent on hover */
+}
+
+/* Set a specific color for each icon */
+.fa-instagram {
+  color: #e4405f; /* Use the Instagram brand color */
+}
+
+.fa-facebook {
+  color: #3b5998; /* Use the Facebook brand color */
+}
+
+.fa-twitter {
+  color: #55acee; /* Use the Twitter brand color */
+}
+
+.fa-envelope {
+  color: #d44638; /* Use a red color for the email icon */
+}
+
+.fa-map-marker {
+  color: #4caf50; /* Use a green color for the location icon */
+}
+
+.fa-phone {
+  color: #2196f3; /* Use a blue color for the phone icon */
+}
+
+@media (max-width: 767px) {
+.flex-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+}
+
+@media (min-width: 768px) {
+.s1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    -webkit-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+}
+
+@media (min-width: 768px) {
+.s2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    -webkit-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+}
+
+/* Use media queries to make the icons responsive */
+@media screen and (max-width: 600px) {
+  .fa {
+    font-size: 1.5em; /* Reduce the icon size for smaller screens */
+    padding: 5px; /* Reduce the space around the icon for smaller screens */
+    margin: 12px; /* Reduce the space between the icons for smaller screens */
+  }
+}
+/*-------------- CSS Testimonials Section--------------  */
+.container h1{
+    font-size: 55px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.box-area{
+  padding: 30px;
+  position: relative;
+  display: block;
+  background: #fff;
+  color: #000;
+  box-shadow: rgba(0,0,0,0.35) 0 5px 15px;
+  margin: 40px 0;
+}
+.box-area h5{
+  font-size: 16px;
+  font-weight: 700;
+  color: #0a69ed;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+.box-area span{
+  color: #262626;
+  display: block;
+  font-size: 14px;
+  margin: 0 0 10px;
+  font-weight: 400;
+
+}
+.box-area .content{
+  color: #262626;
+  font-size: 16px;
+
+}
+.box-area .img-area{
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  right: 0;
+  z-index: 1;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+}
+.box-area .img-area img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  
+}
+.box-area i{
+  font-size: 25px;
+  cursor: pointer;
+}
+.content i{
+  margin: 0 10px;
+  color: #0a69ed;
+  font-size: 18px;
+
+}
+#testimonial_area .owl nav{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+
+}
+#testimonial_area .owl-prev,
+#testimonial_area .owl-next{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #0a69ed !important;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  font-size: 55px !important;
+}
+#testimonial_area .owl-prev:hover,
+#testimonial_area .owl-next:hover{
+  color: #ff004f !important;
+}
+#testimonial_area .owl-prev{
+  left: -60px;
+  top: 40%;
+  font-size: 40px;
+
+}
+#testimonial_area .owl-next{
+  right: -60px;
+  top: 40%;
+  font-size: 40px;
+  color: #e91e63;
+  
+}
+
+/* -----------MEDIA QUARRIES --------------- */
+
+@media only screen and (max-width: 991px){
+  .owl-nav{
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px){
+  .owl-nav{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS rules specific to tablets go here */
+.owl-nav{
+  display: none;
+}
+
+}

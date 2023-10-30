@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desserts/menu-page</title>
+  <link rel="stylesheet" type="text/css" href="Css/desert.css">
+  <script src="https://kit.fontawesome.com/86e5cb6ee7.js" crossorigin="anonymous"></script>
+  <!-- ALL SCRIPTS RELATED TO THE OWL CAROUSEL -->
+  <!-- Link to bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Link to Owl Carousel MIN.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- 3. OWL CAROUSEL THEME MIN.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS TO MAKE ALL IMAGES SAME HEIGHT -->
+  <style>
+    .item img {
+      height: 350px;
+    }
+    body{
+      background-color: #f8f8f8;
+    }
+  </style>
+</head>
+<body>
+    <!-- -------------Header Section ------------------- -->
+  <div class="header">
+    <nav>
+      <img src="images/Cascade-Kitchens-logo.png" class="logo">
+      <ul id="sidemenu">
+          <li><a href="index.html" id="About-font1">Home</a></li>
+          <li><a href="events.html" id="About-font1">Events</a></li>
+          <li><a href="kitchens.html" id="About-font1">Kitchens</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+  </nav> 
+  </div>
+
+<!-- ----- ----- Body Section For carousel ------------------- -->
+<!-- Body section  -->
+<section>
+  <div class="container-fluid my-5">
+    <div class="row mt-5">
+      <div class="owl-carousel owl-theme">
+        <!-- ITEM BEGINS -->
+        <div class="item mb-4">
+          <div class="card border-0 shadow" style="cursor: grab;">
+            <img src="images/cake.jpg" alt="drinks and beverages" class="card-img-top">
+            <div class="card-body">
+              <h4>Cake </h4>
+            </div>
+          </div>
+        </div>
+        <!-- ITEM ENDS -->
+        <!-- ITEM BEGINS -->
+        <div class="item mb-4">
+          <div class="card border-0 shadow" style="cursor: grab;">
+            <img src="images/buger.jpg" alt="drinks and beverages" class="card-img-top">
+            <div class="card-body">
+              <h4>Burger</h4>
+            </div>
+          </div>
+        </div>
+        <!-- ITEM ENDS -->
+    </div>
+    </div>
+  </div>
+</section>
+<a href="menu.html" class="menu-back-btn">Back to menu</a>
+
+  
+<!-- Footer Section -------------------- -->
+<footer>
+  <div class="foot" id="contactus">
+    <div class="footer">
+      <div class="d-flex flex-col">
+        <div class="col s1 text-fine">
+        <h4>CONTACT US </h4>
+        <ul>
+          <li style="list-style: none;"> 0792000888- Events</li>
+          <li style="list-style: none;"> 0708888444 - premier</li>
+          <li style="list-style: none;"> 0720663719 - main</li>
+          <li style="list-style: none;"> 0704044181 - annex</li>
+          <li style="list-style: none;"> 0797111444 - tatu city</li>
+        </ul>
+        <br>
+        <h4>LOCATIONS</h4>
+          <ul class="list-unstyled mb-20 text-fine">
+            <li>
+              <a href="https://www.google.com/maps/place/CASCADE+PREMIER/@-1.0399668,37.0688209,17z/data=!4m10!1m2!2m1!1scascade+restaurant!3m6!1s0x182f4f92101e6f97:0x1dc8bcdfbd5d39f7!8m2!3d-1.0399668!4d37.0729408!15sChJjYXNjYWRlIHJlc3RhdXJhbnRaFCISY2FzY2FkZSByZXN0YXVyYW50kgEKcmVzdGF1cmFudOABAA!16s%2Fg%2F11gtzb4s1h?entry=ttu" target="_blank">Cascade Premier -Thika</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/place/Cascade+Main/@-1.035778,37.0711758,17z/data=!4m10!1m2!2m1!1scascade+restaurant!3m6!1s0x182f4f683c917bfb:0x66f566c9d26cc012!8m2!3d-1.035778!4d37.0756819!15sChJjYXNjYWRlIHJlc3RhdXJhbnRaFCISY2FzY2FkZSByZXN0YXVyYW50kgESYWZyaWNhbl9yZXN0YXVyYW504AEA!16s%2Fg%2F11j5pfjxnq?entry=ttu" target="_blank">Cascade Main -Thika</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/place/Cascade+Annex+Restaurant/@-1.0378724,37.0717364,17z/data=!4m10!1m2!2m1!1scascade+restaurant!3m6!1s0x182f4e855f489747:0x599133d8a2bf026a!8m2!3d-1.0361338!4d37.0732441!15sChJjYXNjYWRlIHJlc3RhdXJhbnRaFCISY2FzY2FkZSByZXN0YXVyYW50kgESYWZyaWNhbl9yZXN0YXVyYW504AEA!16s%2Fg%2F1tfd96s5?entry=ttu" target="_blank">Cascade Annex -Thika</a>
+            </li>
+            <li>
+              <a href="" target="_blank">Cascade Tatu City -Tatu City</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col s2 text-fine">
+          <h4>KITCHEN'S MENU</h4>
+          <ul class="list-unstyled mb-20 text-fine">
+            <li>
+              <a href="breakfast.html">Breakfast</a>
+            </li>
+            <li>
+              <a href="lunch.html">Lunch</a>
+            </li>
+              <a href="dinner.html">Dinner</a>
+            </li>
+            <li>
+              <a href="desert.html">Desserts</a>
+            </li>
+            <li>
+              <a href="drinks.html">Drinks and beverages</a>
+            </li>
+            <li>
+              <a href="specials.html">Specials</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-fine col mb-20">
+        Come experience authentic African cuisine, great service, an exhilarating experience and 
+        incomporable deliciousness. With a knack for food that just slaps, your taste buds will 
+        always be begging for more.
+        <br>
+        All meals are made from organic and sustainably sourced farm produce.
+      </p>
+      <div class="text-fine col" id="copyright">© 2023 Cascade Company Limited. All rights reserved.</div>
+
+    </div>
+    <div class="socials">
+      <a href="https://www.instagram.com/cascade4events/" target="_blank" class="fa fa-instagram"></a>
+      <a href="https://web.facebook.com/people/Cascade-Restaurants/100064075149910/" target="_blank"  class="fa fa-facebook"></a>
+      <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fcascade4events" target="_blank"  class="fa fa-twitter"></a>
+      <a href="mailto:cascadeforevents@gmail.com" target="_blank"  class="fa fa-envelope"></a>
+      <a href="https://www.google.com/maps/place/Cascade+Main/@-1.035778,37.0711758,17z/data=!4m10!1m2!2m1!1scascade+restaurant!3m6!1s0x182f4f683c917bfb:0x66f566c9d26cc012!8m2!3d-1.035778!4d37.0756819!15sChJjYXNjYWRlIHJlc3RhdXJhbnRaFCISY2FzY2FkZSByZXN0YXVyYW50kgESYWZyaWNhbl9yZXN0YXVyYW504AEA!16s%2Fg%2F11j5pfjxnq?entry=ttu" target="_blank"  class="fa fa-map-marker"></a>
+      <a href="tel:+25492000888" target="_blank"  class="fa fa-phone"></a>
+    </div>
+  </div>
+</footer>
+  <!-- -------JS Scripts --------------- -->
+  <!-- ---Header Response -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    
+
+    }
+</script>
+   <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    </script>
+    <!-- ----------Js Cripts and bootstrap for the owl carousel -------------- -->
+   <!-- JS link to bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+   <!-- 1.  JQUERY SCRIPT -------------- -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+   <!-- 2. OWL CAROUSEL MIN.JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+   <!-- SCRIPT FOR THE OWL CAROUSEL -->
+   <script>
+           $('.owl-carousel').owlCarousel({
+         loop:true,
+         margin:10,
+         nav:true,
+         responsive:{
+             0:{
+                 items:1
+             },
+             600:{
+                 items:2
+             },
+             1000:{
+                 items:3
+             }
+         }
+     })
+   </script>
+</body>
+</html>

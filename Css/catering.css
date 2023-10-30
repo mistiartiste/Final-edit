@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #eef4f8;
+}
+.logo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #205e43; /* Set your desired background color */
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+/* -----------Nav css for the popup ------- */
+    nav .fas{
+    display: flex;
+    font-size: 35px;
+    color: #fff;
+}
+    nav .fas:hover{
+        color: #ff004f;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    nav ul {
+        background: rgba(32, 94, 67, 0.9); /* Here, the fourth value (0.8) represents the opacity (0 = fully transparent, 1 = fully opaque) */
+        position: fixed;
+        top: 0;
+        right: -500px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+.btn2{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    background-color: #f8f8f8;
+    border: 1px solid #667;
+    padding: 13px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #205e43;
+    transition: background 0.5s;
+    font-weight: bold;
+  }
+.btn2:hover{
+    border: 1px solid #080808;
+    background: #d8d5d5;
+  
+  }
+
+/* ----------- Services Section --------------- */
+.card-text{
+  font-size: 12px;
+}
+.services {
+  margin-top: 20px;
+  color: #fff;
+}
+.services ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.services li {
+  font-size: 19px;
+}
+/* ----------- Footer Section -------------------- */
+.footer-container{
+  max-width: 1170px;
+  margin: auto;
+}
+.collo{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+  cursor: default;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #ff004f;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #fff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #fff;
+
+}
+
+
+/* ------------------Media Quarries ------------------- */
+@media only screen and (max-width: 767px){
+.header-text{
+  padding-top: 50%;
+}
+.header-text h1 span{
+  font-size: 50px;
+}  
+#About-font2{
+  font-size: 38px;
+  color: #fff;
+}
+#About-font3{
+  font-size: 30px;
+}
+.btn{
+  font-size: 18px;
+}
+nav .fas{
+  display: block;
+  font-size: 25px;
+  color: #fff;
+}
+nav ul {
+  background: rgba(32, 94, 67, 0.8); /* Here, the fourth value (0.8) represents the opacity (0 = fully transparent, 1 = fully opaque) */
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 0.5s;
+}
+
+nav ul li{
+  display: block;
+  margin: 25px;
+}
+nav ul .fas{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+}
+.services li {
+    font-size: 16px;
+  }
+.services-p{
+    font-size: 16px !important;
+}
+.services-head{
+    font-size: 45px !important;
+}
+/* ------ Quarry for Footer ---------*/
+.footer-col {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+}
+@media only screen and (max-width: 574px){
+/* ----quarry for footer ------- */
+.footer-col {
+  width: 100%;
+}
+}
+/* --------------Quarries for Tablets --------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+/* Your tablet-specific styles go here */
+.header-text{
+  padding-top: 50%;
+}
+}
+/* ----------- Quarries for Smarphones Landscape ------------------ */
+@media (max-width: 1024px) and (orientation: landscape) {
+/* Your landscape phone-specific styles go here */
+.header-text{
+  padding-top: 7%;
+}
+#header{
+  width: 100%;
+  height: 150vh;
+}
+#About-font2{
+  font-size: 38px;
+  color: #fff;
+}
+#About-font3{
+  font-size: 30px;
+}
+}

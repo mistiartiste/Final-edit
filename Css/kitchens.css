@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Nunito+Sans:opsz@6..12&family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.5;
+  }
+
+  #header{
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      animation: change 25s infinite ease-in-out;
+      position: relative;
+      z-index: 1;
+    }
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+      z-index: 1; /* Ensure the overlay appears above the images */
+  }
+  
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .logo{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100px;
+      display: flex;
+      align-items: center;
+    }
+    nav ul li{
+      display: flex;
+      list-style: none;
+      margin: 25px 20px;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    nav ul li a{
+      color: #f8f8f8;
+      text-decoration: none;
+      font-size: 22px;
+      position: relative;
+    }
+    nav ul li a::after{
+      content: '';
+      width: 0;
+      height: 3px;
+      background: #ff004f;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+      width: 100%;
+    }
+    nav .fas{
+        display: flex;
+        font-size: 35px;
+        color: #fff;
+    }
+    nav ul .fas{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+  }
+    nav .fas:hover{
+        color: #ff004f;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    nav ul {
+        background: rgba(32, 94, 67, 0.9); /* Here, the fourth value (0.8) represents the opacity (0 = fully transparent, 1 = fully opaque) */
+        position: fixed;
+        top: 0;
+        right: -500px;
+        width: 350px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .header-text{
+      padding-top: 80px;
+      margin-top: 9%;
+      text-align: center;
+    }
+
+    .header-text h1 span{
+      color: #ff004f;
+      font-family: 'Alex Brush', cursive;
+      font-size: 70px;
+    }
+
+    #About-font2{
+      color: aliceblue;
+      font-family: 'Alex Brush', cursive;
+      font-size: 65px;
+    }
+    #About-font3{
+      color: #fff;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 42px;
+    }
+  
+    .btn{
+      display: block;
+      margin: 50px auto;
+      width: fit-content;
+      background-color: #f8f8f8;
+      border: 1px solid #fff;
+      padding: 12px 35px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #205e43;
+      transition: background 0.5s;
+      font-weight: bold;
+      font-size: 22px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 800;
+    }
+    .btn:hover{
+      border: 1px solid #205e43;
+      background: #d8d5d5;
+    
+    }
+    .btn2{
+      display: block;
+      margin: 50px auto;
+      width: fit-content;
+      background-color: #f8f8f8;
+      border: 1px solid #fff;
+      padding: 13px 50px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #205e43;
+      transition: background 0.5s;
+      font-weight: bold;
+    }
+    .btn2:hover{
+      border: 1px solid #fff;
+      background: #d8d5d5;
+    
+    }
+  
+  
+    @keyframes change{
+      0%
+      {
+        background-image: url(/images/buger.jpg)
+      }
+      20%
+      {
+        background-image: url(/images/pasta.jpg)
+      }
+      40%
+      {
+        background-image: url(/images/Food1.jpg)
+      }
+      60%
+      {
+        background-image: url(/images/Hot_dog.jpg)
+      }
+      80%
+      {
+        background-image: url(/images/pexels-mariana-kurnyk-1775043.jpg)
+      }
+      100%
+      {
+        background-image: url(/images/kitchens-tatu.jpg)
+      }
+    }
+/* --------------- Body Section --------------- */
+    .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative; /* Ensure the container is positioned relatively */
+}
+    .card-overlay {
+    background-color: rgba(0, 0, 0, 0.05); /* Adjust the color and opacity as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+    .card{
+        width: 450px;
+        height: 650px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgb(0,0,0,0.7);
+        margin: 20px;
+    }
+    .card img{
+        width: 100%;
+        height: 50%;
+    }
+    .card-content{
+        padding: 16px;
+    }
+    .card-content h3{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .card-content p{
+        color: #667;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .card-content .btn-card{
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #333;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 16px;
+        color: #fff;
+    }
+    .card-content .btn-card:hover{
+        background: #205e43;
+        transform: translateY(-3px);
+        transition: 0.5s;
+    }
+
+    /* ----------- Footer Section -------------------- */
+    .footer-container{
+        max-width: 1170px;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+    .footer{
+        background-color: #24262b;
+        padding: 70px 0;
+    }
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position: relative;
+        cursor: default;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #ff004f;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #fff;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #fff;
+
+    }
+
+
+    /* ------------------Media Quarries ------------------- */
+    @media only screen and (max-width: 767px){
+    .header-text{
+        padding-top: 50%;
+    }
+    .header-text h1 span{
+        font-size: 50px;
+      }  
+    #About-font2{
+        font-size: 38px;
+        color: #fff;
+    }
+    #About-font3{
+        font-size: 30px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        color: #fff;
+    }
+    nav ul {
+        background: rgba(32, 94, 67, 0.8); /* Here, the fourth value (0.8) represents the opacity (0 = fully transparent, 1 = fully opaque) */
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .card{
+      height: 820px;
+  }
+    /* ------ Quarry for Footer ---------*/
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+@media only screen and (max-width: 574px){
+    /* ----quarry for footer ------- */
+    .footer-col {
+        width: 100%;
+    }
+}
+/* --------------Quarries for Tablets --------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Your tablet-specific styles go here */
+    .header-text{
+        padding-top: 50%;
+    }
+}
+/* ----------- Quarries for Smarphones Landscape ------------------ */
+@media (max-width: 1024px) and (orientation: landscape) {
+    /* Your landscape phone-specific styles go here */
+    .header-text{
+        padding-top: 7%;
+    }
+    #header{
+        width: 100%;
+        height: 150vh;
+      }
+      #About-font2{
+        font-size: 38px;
+        color: #fff;
+    }
+    #About-font3{
+        font-size: 30px;
+    }
+}

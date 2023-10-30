@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade-Events</title>
+    <link rel="stylesheet" href="Css/events.css">
+    <script src="https://kit.fontawesome.com/86e5cb6ee7.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- -------Header Section ------------------ -->
+    <div id="header">
+        <div class="overlay">
+          <div class="container">
+            <nav>
+                <img src="images/Correct logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html" id="About-font1">Home</a></li>
+                    <li><a href="kitchens.html" id="About-font1">Kitchens</a></li>
+                    <li><a href="#footer" id="About-font1">Contact Us</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav> 
+            <div class="header-text">
+                <p id="About-font2">Cascade Events</p>
+                <h1 id="About-font3">Let's make your <br> <span>Vision</span> come to life.</h1>
+                <a href="#footer" class="btn">Event booking</a>
+            </div>
+        </div>
+      </div>    
+    </div>
+
+<!-- -------- Card section -------------------->
+    <div class="card-container">
+        <div class="card-overlay"></div>
+        <div class="card">
+            <img src="images/Our-services.jpg" width="500px" height="500px">
+            <div class="card-content">
+                <h3> Our services </h3>
+                <p>At Cascade Events, Our array of services are designed to meet your needs and exceed your expectations. We specializes in planning, organizing, and executing a wide range of events and gatherings for individuals, businesses, organizations, and more ensuring that every moment is memorable. We can't wait for you to see what we have in store.</p>
+                <a href="services.html" class="btn-card">View More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/Our-venues.png" width="500px" height="500px">
+            <div class="card-content">
+                <h3> Our Venues </h3>
+                <p>"We're excited to present to you Cascade Gardens for your next unforgettable event.With its lush greenery, beautifully landscaped grounds, and a serene ambiance, Cascade Gardens is a picturesque haven for weddings, corporate gatherings, and special occasions. For more info click the link below to check out Cascade Gardens"</p>
+                <a href="venue.html" class="btn-card">View More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/our-reviews.png" width="500px" height="500px">
+            <div class="card-content">
+                <h3> Client's Reviews </h3>
+                <p>Our clients' feedback speaks volumes about the experiences we create at Cascade events. You'll find testimonials that highlight the seamless execution of our events, the professionalism of our team, and the memorable moments we've crafted.To dive into their stories and experiences, click on the 'View More' link below</p>
+                <a href="event-review.html" class="btn-card">View More</a>
+            </div>
+        </div>
+        <div class="card-overlay"></div>
+    </div>
+
+    <!-- ------------------Footer Section ----------------------- -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Cascade Company Limited</h4>
+                    <ul>
+                        <li><a href="#">Cascade Events</a></li>
+                        <li><a href="kitchens.html">Cascade Kitchens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="tel:+25492000888" target="_blank">0792000888</a></li>
+                        <li><a href="#">Cascadeforevents@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/place/CASCADE+PREMIER/@-1.0399668,37.0688209,17z/data=!4m10!1m2!2m1!1scascade+restaurant!3m6!1s0x182f4f92101e6f97:0x1dc8bcdfbd5d39f7!8m2!3d-1.0399668!4d37.0729408!15sChJjYXNjYWRlIHJlc3RhdXJhbnRaFCISY2FzY2FkZSByZXN0YXVyYW50kgEKcmVzdGF1cmFudOABAA!16s%2Fg%2F11gtzb4s1h?entry=ttu" target="_blank">Thika Town- Cascade premier</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/cascade4events/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fcascade4events"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for the Nav bar in Smartphones -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-350px";
+        }
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        
+    
+        }
+    </script>
+</body>
+</html>

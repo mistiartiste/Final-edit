@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .logo{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        cursor: grab;
+      }
+    /* ---- Header Section --------------------- */
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #205e43; /* Set your desired background color */
+    }
+    nav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px;
+    }
+    nav ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 22px;
+      position: relative;
+    }
+    nav ul li a::after{
+      content: '';
+      width: 0;
+      height: 3px;
+      background: #ff004f;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+      width: 100%;
+    }
+    /* -----------Nav css for the popup ------- */
+        nav .fas{
+        display: flex;
+        font-size: 35px;
+        color: #fff;
+    }
+        nav .fas:hover{
+            color: #ff004f;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        nav ul {
+            background: rgba(32, 94, 67, 0.9); /* Here, the fourth value (0.8) represents the opacity (0 = fully transparent, 1 = fully opaque) */
+            position: fixed;
+            top: 0;
+            right: -500px;
+            width: 200px;
+            height: 100vh;
+            padding-top: 50px;
+            z-index: 2;
+            transition: right 0.5s;
+        }
+        
+        nav ul li{
+            display: block;
+            margin: 25px;
+        }
+        nav ul .fas{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+        }
+    .btn2{
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        background-color: #f8f8f8;
+        border: 1px solid #667;
+        padding: 13px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #205e43;
+        transition: background 0.5s;
+        font-weight: bold;
+      }
+    .btn2:hover{
+        border: 1px solid #080808;
+        background: #d8d5d5;
+      
+      }
+    /* ---------------Body Section ------------------- */
+    /* Style for the Main Title */
+    .main-title {
+        text-align: center;
+        margin: 20px;
+        text-transform: capitalize;
+    }
+
+    .main-title h1 {
+        font-size: 26px;
+        color: #080808;
+    }
+
+    /* Style for Intro Text */
+    .intro-text {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .intro-text p {
+        font-size: 16px;
+    }
+
+    /* Style for Room Sections */
+    .room {
+        background-color: #f1f1f1;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #e0e0e0;
+    }
+
+    .room h2 {
+        color: #100955;
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .room p {
+        font-size: 16px;
+    }
+/* ---------------Table section -------------- */
+    /* Style for the Capacity Table */
+    .capacity-table {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .capacity-table h2 {
+        font-size: 22px;
+        color: #000;
+        margin: 30px 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid #e0e0e0;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    thead {
+        background-color: #f2f2f2;
+    }
+
+    th {
+        font-weight: bold;
+    }
+    /* Media query for screens with a maximum width of 768px (typical for smartphones) */
+    
+
+/* ------------- Card Section -------------- */
+/* Style for "Conference & Banqueting Styles" Section */
+.conference-styles {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.conference-styles h2 {
+    font-size: 24px;
+    color: #000;
+    margin: 0 0 20px;
+}
+/* Media query for screens with a maximum width of 768px (typical for smartphones) */
+@media screen and (max-width: 768px) {
+    /* Hide the first column for numbers on small screens */
+    table td:nth-child(1),
+    table th:nth-child(1) {
+        display: none;
+    }
+
+    /* Adjust the table's font size and padding for better mobile readability */
+    table {
+        font-size: 12px;
+    }
+
+    table td, table th {
+        padding: 5px;
+    }
+}
+/* Display two cards per row */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position: relative; /* Ensure the container is positioned relatively */
+}
+    .card-overlay {
+    background-color: rgba(0, 0, 0, 0.05); /* Adjust the color and opacity as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+    .card{
+        width: 350px;
+        height: 370px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgb(0,0,0,0.7);
+        margin: 20px;
+    }
+    .card img{
+        width: 100%;
+        height: 60%;
+    }
+    .card-content{
+        padding: 12px;
+    }
+    .card-content h3{
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .card-content p{
+        color: rgb(71, 71, 80);
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .card-content .btn-card{
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #333;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 16px;
+        color: #fff;
+    }
+    .card-content .btn-card:hover{
+        background: #205e43;
+        transform: translateY(-3px);
+        transition: 0.5s;
+    }
+
+/* Style for the "Parting Blow" Section */
+.parting-blow {
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #080808;
+    padding: 20px;
+}
+
+.parting-blow p {
+    font-size: 16px;
+    margin: 0;
+}
+/* ----- CSS FOR THE BACK BUTTON --------- */
+.menu-back-btn {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    background-color: #205e43;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .menu-back-btn:hover{
+    border: 1px solid #205e43;
+    background: #d8d5d5;
+    color: #000;
+  
+  }
+
+    /* ----------- Footer Section -------------------- */
+    .footer-container{
+        max-width: 1170px;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+    .footer{
+        background-color: #24262b;
+        padding: 70px 0;
+    }
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position: relative;
+        cursor: default;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #ff004f;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #fff;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #fff;
+
+    }
+
+
+    /* ------------------Media Quarries ------------------- */
+    @media only screen and (max-width: 767px){
+    .header-text{
+        padding-top: 50%;
+    }
+    .header-text h1 span{
+        font-size: 50px;
+      }  
+    #About-font2{
+        font-size: 38px;
+        color: #fff;
+    }
+    #About-font3{
+        font-size: 30px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        color: #fff;
+    }
+    nav ul {
+        background: rgba(32, 94, 67, 0.9); /* Here, the fourth value (0.8) represents the opacity (0 = fully transparent, 1 = fully opaque) */
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    /* ------ Quarry for Footer ---------*/
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+@media only screen and (max-width: 574px){
+    /* ----quarry for footer ------- */
+    .footer-col {
+        width: 100%;
+    }
+}
+/* --------------Quarries for Tablets --------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Your tablet-specific styles go here */
+    .header-text{
+        padding-top: 50%;
+    }
+}
+/* ----------- Quarries for Smarphones Landscape ------------------ */
+@media (max-width: 1024px) and (orientation: landscape) {
+    /* Your landscape phone-specific styles go here */
+    .header-text{
+        padding-top: 7%;
+    }
+    #header{
+        width: 100%;
+        height: 150vh;
+      }
+      #About-font2{
+        font-size: 38px;
+        color: #fff;
+    }
+    #About-font3{
+        font-size: 30px;
+    }
+}
