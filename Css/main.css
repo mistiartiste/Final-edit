@@ -21,6 +21,7 @@ html{
   padding-bottom: 10px;
   width: 100px;
   align-items: center;
+  cursor: grab;
 }
 .events-logo{
   padding-top: 10px;
@@ -98,6 +99,7 @@ nav ul li a:hover::after{
   width: 95px;
   margin: 10px;
 }
+/* -------End of header */
 h4 {
   margin-top: 10px;
   font-weight: 900;
@@ -127,9 +129,11 @@ h4 {
   transition: 0.25s ease all;
 }
 .events{
+  /* background: url(//images/Hoempage.png); */
   background: url('https://Zendexx.github.io/Final-edit/images/Hoempage.png');
 }
 .restaurant{
+  /* background: url(/images/buger.jpg); */
   background: url('https://Zendexx.github.io/Final-edit/images/buger.jpg');
 }
 .wrapper .left:hover .image,
@@ -153,10 +157,11 @@ h4 {
   padding: 1em 2em;
   text-decoration: none;
   font-size: 1.1em;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: 0.25s ease all;
-  font-weight: 500;
+  font-weight: 400;
 }
 .wrapper .caption .button:hover{
   background: #ffd346;
@@ -379,6 +384,13 @@ nav ul .fas{
   padding-bottom: 10px;
   width: 120px;
   align-items: center;
+}
+.company-logo{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50px;
+  align-items: center;
+  cursor: grab;
 }
 }
 @media only screen and (max-width: 900px) and (orientation: landscape) {

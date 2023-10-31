@@ -255,7 +255,9 @@ nav ul .fas{
   width: 50%;
   margin-bottom: 30px;
 }
-
+.row{
+  width: auto;
+}
 }
 @media only screen and (max-width: 574px){
 /* ----quarry for footer ------- */

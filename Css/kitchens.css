@@ -171,26 +171,32 @@
     @keyframes change{
       0%
       {
+        /* background-image: url(/images/buger.jpg) */
         background-image: url('https://Zendexx.github.io/Final-edit/images/buger.jpg')
       }
       20%
       {
+        /* background-image: url(/images/pasta.jpg) */
         background-image: url('https://Zendexx.github.io/Final-edit/images/pasta.jpg')
       }
       40%
       {
+        /* background-image: url(/images/Food1.jpg) */
         background-image: url('https://Zendexx.github.io/Final-edit/images/Food1.jpg')
       }
       60%
       {
+        /* background-image: url(/images/Hot_dog.jpg) */
         background-image: url('https://Zendexx.github.io/Final-edit/images/Hot_dog.jpg')
       }
       80%
       {
+        /* background-image: url(/images/pexels-mariana-kurnyk-1775043.jpg) */
         background-image: url('https://Zendexx.github.io/Final-edit/images/pexels-mariana-kurnyk-1775043.jpg')
       }
       100%
       {
+        /* background-image: url(/images/kitchens-tatu.jpg) */
         background-image: url('https://Zendexx.github.io/Final-edit/images/kitchens-tatu.jpg')
       }
     }

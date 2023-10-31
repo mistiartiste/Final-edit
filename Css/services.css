@@ -220,7 +220,7 @@ nav .fas{
   color: #fff;
 }
 nav ul {
-  background: rgba(32, 94, 67, 0.8); /* Here, the fourth value (0.8) represents the opacity (0 = fully transparent, 1 = fully opaque) */
+  background: rgba(32, 94, 67, 0.9); /* Here, the fourth value (0.8) represents the opacity (0 = fully transparent, 1 = fully opaque) */
   position: fixed;
   top: 0;
   right: -200px;
@@ -240,6 +240,15 @@ nav ul .fas{
   top: 25px;
   left: 25px;
   cursor: pointer;
+}
+.services li {
+    font-size: 16px;
+  }
+.services-p{
+    font-size: 16px !important;
+}
+.services-head{
+    font-size: 45px !important;
 }
 /* ------ Quarry for Footer ---------*/
 .footer-col {
