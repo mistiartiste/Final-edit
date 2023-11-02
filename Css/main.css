@@ -35,15 +35,23 @@ html{
   width: 150px;
   align-items: center;
 }
+
+.head {
+  opacity: 75%;
+}
+
+.head:hover {
+  opacity: 100%;
+}
 .header h1{
   color: #fff;
   font-size: 30px;
   letter-spacing: 0.05em;
+  position: relative;
 }
 
-.header h1:hover{
-  opacity: 1;
-}
+
+
 #About-font1 {
   font-size: 22px;
 }
