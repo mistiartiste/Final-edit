@@ -46,7 +46,8 @@ html{
 .header h1{
   color: #fff;
   font-size: 30px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.2em;
+  font-family: "capsule", sans-serif;
   position: relative;
 }
 
@@ -165,11 +166,11 @@ h4 {
   padding: 1em 2em;
   text-decoration: none;
   font-size: 1.1em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "nagel-variable", sans-serif;
+  font-weight: 1000;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: 0.25s ease all;
-  font-weight: 400;
 }
 .wrapper .caption .button:hover{
   background: #ffd346;
